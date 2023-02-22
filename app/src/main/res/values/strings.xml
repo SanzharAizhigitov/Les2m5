@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Les2m5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_write_second_name">Please write second name</string>
+    <string name="please_write_first_name">Please write first name</string>
+    <string name="calculate">Calculate</string>
+    <string name="click_to_heart">Click to heart</string>
+    <string name="return_tv">return</string>
+    <string name="your_percentage">Your percentage:</string>
+    <string name="warning">You will have to click a couple of times, because it is difficult to achieve love!</string>
+</resources>
