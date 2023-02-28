@@ -1,4 +1,4 @@
-package com.geektech.les2m5
+package com.geektech.les2m5.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

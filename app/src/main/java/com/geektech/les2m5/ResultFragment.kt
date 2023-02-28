@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.geektech.les2m5.databinding.FragmentResultBinding
+import com.geektech.les2m5.remote.LoveModel
 
 
 class ResultFragment : Fragment() {
