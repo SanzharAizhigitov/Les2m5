@@ -8,6 +8,7 @@
     android:background="@color/pink"
     tools:context=".ResultFragment">
     <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
         android:scaleType="centerCrop"
         android:id="@+id/love_anim"
         android:layout_width="wrap_content"
@@ -47,6 +48,7 @@
         android:id="@+id/btn_return"
         />
     <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
         android:id="@+id/love_anim2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

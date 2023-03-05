@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -56,4 +58,10 @@ dependencies {
 
     def fragment_version = "1.5.5"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
+    implementation 'com.google.dagger:hilt-android:2.45'
+    kapt 'com.google.dagger:hilt-compiler:2.45'
+
+    //circle indicator
+    implementation 'me.relex:circleindicator:2.1.6'
 }

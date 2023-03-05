@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/warningFragment">
+    app:startDestination="@id/boardingFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -20,4 +20,9 @@
         android:name="com.geektech.les2m5.LogoFragment"
         android:label="fragment_warning"
         tools:layout="@layout/fragment_logo" />
+    <fragment
+        android:id="@+id/boardingFragment"
+        android:name="com.geektech.les2m5.onBoarding.BoardingFragment"
+        android:label="fragment_boarding"
+        tools:layout="@layout/fragment_boarding" />
 </navigation>

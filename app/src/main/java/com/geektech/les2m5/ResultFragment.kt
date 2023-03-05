@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.geektech.les2m5.databinding.FragmentResultBinding
 import com.geektech.les2m5.remote.LoveModel
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class ResultFragment : Fragment() {
     lateinit var binding: FragmentResultBinding
     override fun onCreateView(
