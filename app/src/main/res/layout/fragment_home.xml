@@ -82,6 +82,14 @@
         android:layout_marginTop="20dp"
         android:scaleType="fitXY"
         android:src="@drawable/img2" />
-
+<Button
+    android:id="@+id/history_btn"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:backgroundTint="@color/dark_pink"
+    android:textColor="@color/white"
+    android:textSize="36sp"
+    android:text="HISTORY"
+    />
 
 </LinearLayout>

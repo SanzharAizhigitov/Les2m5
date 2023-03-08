@@ -33,17 +33,21 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.historyBtn.setOnClickListener{
+            findNavController().navigate(R.id.historyFragment)
+        }
         binding.calculateIv.setOnClickListener {
             viewModel.getLiveLove(
                 binding.outlinedTextFieldFname.editText?.text.toString(),
                 binding.outlinedTextFieldSname.editText?.text.toString()
             )
                 .observe(viewLifecycleOwner, Observer { loveModel ->
-                    findNavController().navigate(
-                        R.id.resultFragment, bundleOf(
+                   App.appDatabase.loveDao().insert(loveModel)
+                    findNavController().navigate(R.id.resultFragment, bundleOf(
                             "model" to loveModel
                         )
                     )
+
                 })
         }
     }

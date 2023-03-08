@@ -9,4 +9,5 @@
     <string name="return_tv">return</string>
     <string name="your_percentage">Your percentage:</string>
     <string name="warning">You will have to click a couple of times, because it is difficult to achieve love!</string>
+    <string name="line">____________________________________</string>
 </resources>
