@@ -4,5 +4,5 @@ import android.media.Image
 
 data class onBoard(
     var message:String,
-    var image: Int
+    var anim: Int
 )

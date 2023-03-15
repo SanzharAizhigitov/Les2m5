@@ -38,9 +38,9 @@ class BoardingFragment : Fragment() {
         binding.boardingVp.adapter = adapter
         binding.indicator.setViewPager(binding.boardingVp)
         adapter.registerAdapterDataObserver(binding.indicator.adapterDataObserver)
-        if (preferences.isUserSeen()) {
-            findNavController().navigate(R.id.homeFragment)
-        }
+            //if (preferences.isUserSeen()) {
+         //   findNavController().navigate(R.id.homeFragment)
+      //  }
     }
 
     fun onClick() {

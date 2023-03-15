@@ -16,19 +16,19 @@ class onBoardingAdapter(private val onClick: () -> Unit) :
     var data = arrayListOf(
         onBoard(
 "Скоро на свидание? Узнайте совместимость!",
-            R.drawable.board1
+            R.raw.love_anim
             ),
         onBoard(
             "Стоит ли жениться, или этот человек не для вас?",
-            R.drawable.board2
+            R.raw.love_anim2
         ),
         onBoard(
             "Удобный калькулятор у вас в телефоне!",
-            R.drawable.board3
+            R.raw.love_anim3
         ),
         onBoard(
             "Внимание! Приложение не имеет связи с реальным миром. Все совпадения случайны!",
-            R.drawable.board4
+            R.raw.love_anim4
         )
     )
 
@@ -54,7 +54,7 @@ class onBoardingAdapter(private val onClick: () -> Unit) :
     inner class onBoardingViewHolger(private val binding: ItemOnBoardingBinding) :
         ViewHolder(binding.root) {
         fun bind(onBoard: onBoard) {
-binding.backgroundIv.setImageResource(onBoard.image)
+            onBoard.anim.let { binding.loveAnim.setAnimation(it) }
             binding.messageTw.text = onBoard.message
             binding.getstartBtn.isVisible = adapterPosition == data.lastIndex
             binding.getstartBtn.setOnClickListener{
